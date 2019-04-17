@@ -15,6 +15,7 @@ If anything is unclear or you have any questions, feel free to get back to us. W
 
 * `yarn install` - installing dependencies
 * `yarn start` - starting the app in dev mode
+* `yarn start-windows` - starting the app in dev mode on windows
 * `yarn build` - build the production artifacts
 * `yarn test` - running the tests
 
