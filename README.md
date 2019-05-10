@@ -21,7 +21,7 @@ If anything is unclear or you have any questions, feel free to get back to us. W
 
 ## How to deliver your assessment
 
-* Please fork/clone this repository to your own version control platform (GitHub, GitLab, BitBucket, etc.) and send us the link to it
+* Please fork/clone this repository to your own version control platform (GitHub, GitLab, BitBucket, etc.)(public repo) and send us the link to it
 * We will pay attention to the commits to see how the work was structured
 
 ## Functional requirements
@@ -77,6 +77,8 @@ If anything is unclear or you have any questions, feel free to get back to us. W
 * To get the categories: https://api.gousto.co.uk/products/v2.0/categories
 * To get the products: https://api.gousto.co.uk/products/v2.0/products?includes[]=categories&image_sizes[]=365
 * For cross origin accessibility you can use [cross-fetch](https://www.npmjs.com/package/cross-fetch) that is already installed in package.json.
+* If one of the first points are not working then use steps from this link : 
+`https://alfilatov.com/posts/run-chrome-without-cors/`
 
 ## Non-Functional Requirements 
 
@@ -84,7 +86,8 @@ If anything is unclear or you have any questions, feel free to get back to us. W
 * Use your preferred library for state management (Redux dependencies are already set up, but you can use what you want)
 * Use your preferred CSS solution/library. Use your imagination, but do not spend to much time for css
 * The application should be responsive (the application can be used on mobile)
-* The code should be production ready (i.e. include tests)
+* The code should include `test`
+* The code should be production ready (no refactoring need)
 
 ## Help us to understand your solution
 
