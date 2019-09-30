@@ -19,6 +19,9 @@ If anything is unclear or you have any questions, feel free to get back to us. W
 * `yarn build` - build the production artifacts
 * `yarn test` - running the tests
 
+## Instaling/Starting server
+* Go to `./server` and run `npm install` then `npm start`
+
 ## How to deliver your assessment
 
 * Please fork/clone this repository to your own version control platform (GitHub, GitLab, BitBucket, etc.)(public repo) and send us the link to it
@@ -73,12 +76,8 @@ If anything is unclear or you have any questions, feel free to get back to us. W
   * And I can see the 'Large Alcohol' category selected
 
 #### API endpoints:
-
-* To get the categories: https://api.gousto.co.uk/products/v2.0/categories
-* To get the products: https://api.gousto.co.uk/products/v2.0/products?includes[]=categories&image_sizes[]=365
-* For cross origin accessibility you can use [cross-fetch](https://www.npmjs.com/package/cross-fetch) that is already installed in package.json.
-* If one of the first points are not working then use steps from this link : 
-`https://alfilatov.com/posts/run-chrome-without-cors/`
+* To get the categories: http://localhost:3000/products/v2.0/categories
+* To get the products: http://localhost:3000/products/v2.0/products
 
 ## Non-Functional Requirements 
 
