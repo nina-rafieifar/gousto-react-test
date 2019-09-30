@@ -1,6 +1,6 @@
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const express = require('express')
-const fs = require('fs')
 const path = require('path')
 
 const PORT = 3000
@@ -8,6 +8,7 @@ const PRODUCTS_PATH = 'data/products'
 
 const app = express()
 
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
