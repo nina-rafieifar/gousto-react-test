@@ -1,31 +1,10 @@
 # Gousto coding test
 
-Hi there! We prepared a technical task so we can get to know you better. Below you will find scenarios and further details on what this task is about.
+## Getting started:
 
-If anything is unclear or you have any questions, feel free to get back to us. We want to make our technical task a pleasant experience so feel free to give us any feedback on this exercise.
-
-## How to use:
-
-### Prerequisites:
-
-* `node js` >= 8.12
-* `yarn` (you can install it globally by running `npm install -g yarn`)
-
-### Commands:
-
-* `yarn install` - installing dependencies
-* `yarn start` - starting the app in dev mode
-* `yarn start-windows` - starting the app in dev mode on windows
-* `yarn build` - build the production artifacts
-* `yarn test` - running the tests
-
-## Instaling/Starting server
-* Go to `./server` and run `npm install` then `npm start`
-
-## How to deliver your assessment
-
-* Please fork/clone this repository to your own version control platform (GitHub, GitLab, BitBucket, etc.)(public repo) and send us the link to it
-* We will pay attention to the commits to see how the work was structured
+1. Run the application with `yarn` followed by `yarn start` in the current directory - the application will be available at [http://localhost:3600](http://localhost:3600)
+2. Run the server by moving into the `server` directory and running `yarn` followed by `yarn start`. See [API endpoints](#api-endpoints) below.
+3. Run application tests with `yarn test`
 
 ## Functional requirements
 
@@ -75,9 +54,10 @@ If anything is unclear or you have any questions, feel free to get back to us. W
   * Then I click forward button
   * And I can see the 'Large Alcohol' category selected
 
-#### API endpoints:
-* To get the categories: http://localhost:3000/products/v2.0/categories
-* To get the products: http://localhost:3000/products/v2.0/products
+#### [API endpoints:](#api-endpoints)
+Ensure that the server is running locally (Step 2 in Getting Started), and then you can access: 
+* Categories at: http://localhost:3000/products/v2.0/categories
+* Products at: http://localhost:3000/products/v2.0/products
 
 ## Non-Functional Requirements
 
@@ -87,14 +67,6 @@ If anything is unclear or you have any questions, feel free to get back to us. W
 * The application should be responsive (the application can be used on mobile)
 * The code should include `test`
 * The code should be production ready (no refactoring need)
-
-## Help us to understand your solution
-
-* In order to understand better you solution we would like to see the following sections in a Readme:
-    * `How to use`: details about how to use your solution(if anything different from what we added)
-    * `Application structure`: explain the architecture - feel free to change the base structure from this test
-    * `A list of missing functional requirements`: if any, and explain why you didn't complete them
-    * `Possible improvements/ functionality`: anything that you wished you could've added if you had more time
 
 ## Visuals
 
