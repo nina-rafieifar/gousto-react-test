@@ -1,11 +1,13 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Router } from "@reach/router"
 import Menu from './Menu.js'
 import './App.css'
 
 const App = () => (
   <div className="appContainer">
-    <Route exact path="/" component={Menu} />
+    <Router>
+      <Menu path="/"/>
+    </Router>
   </div>
 )
 
