@@ -1,4 +1,8 @@
 # Gousto coding test
+Hi there! We prepared a technical task so we can get to know you better. Below you will find scenarios and further details on what this task is about.
+Please fork this repository in your account.
+
+If anything is unclear or you have any questions, feel free to get back to us. We want to make our technical task a pleasant experience so feel free to give us any feedback on this exercise.
 
 ## Getting started:
 
