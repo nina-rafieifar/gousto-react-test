@@ -4,6 +4,12 @@ Please fork this repository in your account.
 
 If anything is unclear or you have any questions, feel free to get back to us. We want to make our technical task a pleasant experience so feel free to give us any feedback on this exercise.
 
+## Getting started:
+
+1. Please install the dependencies for both `app` and `server` by running `npm i` within both of folders;
+2. After installation, start the `app` e.g. `cd app && npm start`;
+3. On a separate terminal, please start the `server` e.g. `cd server && npm start`. See [API endpoints](#api-endpoints) below.
+
 ## Functional requirements
 
 ### Task 1: As a user I want to see a list of products titles and descriptions
