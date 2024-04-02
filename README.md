@@ -4,12 +4,6 @@ Please fork this repository in your account.
 
 If anything is unclear or you have any questions, feel free to get back to us. We want to make our technical task a pleasant experience so feel free to give us any feedback on this exercise.
 
-## Getting started:
-
-1. Run the application with `yarn` followed by `yarn start` in the current directory - the application will be available at [http://localhost:3600](http://localhost:3600)
-2. Run the server by moving into the `server` directory and running `yarn` followed by `yarn start`. See [API endpoints](#api-endpoints) below.
-3. Run application tests with `yarn test`
-
 ## Functional requirements
 
 ### Task 1: As a user I want to see a list of products titles and descriptions
