@@ -3,7 +3,7 @@ const cors = require('cors')
 const express = require('express')
 const path = require('path')
 
-const PORT = 3000
+const PORT = 3001
 const PRODUCTS_PATH = 'data/products'
 
 const app = express()

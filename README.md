@@ -6,9 +6,9 @@ If anything is unclear or you have any questions, feel free to get back to us. W
 
 ## Getting started:
 
-1. Run the application with `yarn` followed by `yarn start` in the current directory - the application will be available at [http://localhost:3600](http://localhost:3600)
-2. Run the server by moving into the `server` directory and running `yarn` followed by `yarn start`. See [API endpoints](#api-endpoints) below.
-3. Run application tests with `yarn test`
+1. Please install the dependencies for both `app` and `server` by running `npm i` within both of folders;
+2. After installation, start the `app` e.g. `cd app && npm start`;
+3. On a separate terminal, please start the `server` e.g. `cd server && npm start`. See [API endpoints](#api-endpoints) below.
 
 ## Functional requirements
 
