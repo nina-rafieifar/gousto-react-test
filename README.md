@@ -60,8 +60,8 @@ If anything is unclear or you have any questions, feel free to get back to us. W
 
 #### [API endpoints:](#api-endpoints)
 Ensure that the server is running locally (Step 2 in Getting Started), and then you can access:
-* Categories at: http://localhost:3000/products/v2.0/categories
-* Products at: http://localhost:3000/products/v2.0/products
+* Categories at: http://localhost:3001/products/v2.0/categories
+* Products at: http://localhost:3001/products/v2.0/products
 
 ## Non-Functional Requirements
 
