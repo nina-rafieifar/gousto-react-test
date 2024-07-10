@@ -21,7 +21,7 @@ We're most interested in seeing **quality** rather than quantity, so please do t
 
 ## Functional requirements
 
-### Task 1: As a user I want to see a list of products' titles, descriptions and images
+### Task 1: As a user I want to see a list of products' titles and descriptions
 
   * Given that I am a user
   * When I land on the main page
