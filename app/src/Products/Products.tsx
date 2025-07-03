@@ -41,8 +41,8 @@ export function Products() {
   }
 
   return (
-    <div>
-      <h2 className="text-2xl mb-3">Products</h2>
+    <section className="flex flex-col gap-2">
+      <h2 className="text-2xl">Products</h2>
       {loading && <p>Loading products...</p>}
       {!loading && products.length === 0 && (
         <p>No products available at the moment.</p>
@@ -58,6 +58,6 @@ export function Products() {
           ))}
         </dl>
       )}
-    </div>
+    </section>
   );
 }
