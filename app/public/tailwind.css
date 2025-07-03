@@ -7,7 +7,17 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-green-700: oklch(52.7% 0.154 150.069);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -158,11 +168,44 @@
   }
 }
 @layer utilities {
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
   .table {
     display: table;
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -170,12 +213,43 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
+  .bg-\[\#ff0032\] {
+    background-color: #ff0032;
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -183,6 +257,72 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .before\:-inset-1 {
+    &::before {
+      content: var(--tw-content);
+      inset: calc(var(--spacing) * -1);
+    }
+  }
+  .before\:content-between {
+    &::before {
+      content: var(--tw-content);
+      align-content: space-between;
+    }
+  }
+  .before\:p-1 {
+    &::before {
+      content: var(--tw-content);
+      padding: calc(var(--spacing) * 1);
+    }
+  }
+  .before\:text-green-700 {
+    &::before {
+      content: var(--tw-content);
+      color: var(--color-green-700);
+    }
+  }
+  .before\:content-\[\'\\2713\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: '\2713';
+      content: var(--tw-content);
+    }
+  }
+  .before\:content-\[\'\\u2713\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: '\u2713';
+      content: var(--tw-content);
+    }
+  }
+  .before\:content-\[\\2713\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: \2713;
+      content: var(--tw-content);
+    }
+  }
+  .before\:content-\[attr\(before\)\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: attr(before);
+      content: var(--tw-content);
+    }
+  }
+  .before\:content-\[attr\(data-before\)\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: attr(data-before);
+      content: var(--tw-content);
+    }
+  }
+  .before\:content-\[☑️\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: ☑️;
+      content: var(--tw-content);
+    }
   }
 }
 body {
@@ -199,16 +339,27 @@ code {
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
+      --tw-content: "";
     }
   }
 }
