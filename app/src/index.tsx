@@ -17,6 +17,7 @@ root.render(
         <Route path="/" element={<App />}>
           <Route index element={<Categories />} />
           <Route path="products" element={<Products />} />
+          <Route path=":categoryId" element={<Categories />} />
         </Route>
       </Routes>
     </BrowserRouter>
